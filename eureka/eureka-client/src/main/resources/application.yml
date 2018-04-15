@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: a-bootiful-client
+  cloud:
+    client:
+      ipAddress: 192.168.0.50
+server:
+  port: 8080
+
+eureka:
+  instance:
+    # eureka client向eureka server发送心跳的时间间隔，默认30秒，将此值改小可解决eureka注册慢的问题
+    lease-renewal-interval-in-seconds: 5
+    # 续约到期时间（默认90秒）
+    lease-expiration-duration-in-seconds: 5
+    # 将instance id设置成IP：端口的形式
+    # 说明：通过试验，spring.cloud.client.ipAddress及server.port要配置文件中必须有值
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

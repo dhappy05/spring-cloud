@@ -1,0 +1,20 @@
+server:
+  port: 8761
+
+eureka:
+  server:
+    #关闭自我保护，从而会保证注销微服务
+    enable-self-preservation: false
+    # 清理时间间隔（单位毫秒，默认60*1000）
+    eviction-interval-timer-in-ms: 3000
+  client:
+    # 表示是否将自已注册到Eureka Server，默认为true,因为自已就是Eureka Server，故设为false
+    register-with-eureka: false
+    # 表示是否从Eureka Server获取注册信息，默认为true。因为这是一个单点的Eureka，不需要同步其它的Eureka Server节点数据，故设为false
+    fetch-registry: false
+logging:
+  level:
+    com:
+      netflix:
+        eureka: on
+        discovery: on
