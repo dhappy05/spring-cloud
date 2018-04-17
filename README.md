@@ -8,4 +8,16 @@
 
 4、microservice-provider-user为微服务提供者
 
-5、
+5、microservice-simple-consumer-movie为微服务消费者
+
+6、
+
+7、
+
+8、
+
+9、
+
+10、
+
+11、
