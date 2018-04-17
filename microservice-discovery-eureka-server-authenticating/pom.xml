@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.ding</groupId>
+	<artifactId>microservice-discovery-eureka-authenticating</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<!--<version>2.0.1.RELEASE</version>-->
+		<!-- 此处要降到1.4.3版本，否则书中的例子跑起来后，客户端不能注册 -->
+		<version>1.4.3.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<!--<spring-cloud.version>Finchley.M9</spring-cloud.version>-->
+		<!-- 此处需降版本才能把书中的例子给运行起来，否则客户端无法连接服务端 -->
+		<spring-cloud.version>Camden.SR4</spring-cloud.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<!-- 旧版本中引入的artifactId应该是spring-cloud-starter-eureka-server，此处由于spring cloud版本降级，故引用spring-cloud-starter-eureka-server -->
+			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<!-- 新版本中引入的artifactId应该是spring-cloud-starter-netflix-eureka-server -->
+			<!-- <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId> -->
+		</dependency>
+
+		<!-- 不引入该依赖包也会成功启动，但http basic授权失效 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+
+</project>
