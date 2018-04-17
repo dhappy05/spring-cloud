@@ -6,4 +6,6 @@
 
 3、microservice-discovery-eureka-server-authenticating为基于HTTP basic证的Eureka Server
 
-4、
+4、microservice-provider-user为微服务提供者
+
+5、
