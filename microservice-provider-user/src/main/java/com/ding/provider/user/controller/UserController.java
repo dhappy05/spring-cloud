@@ -1,3 +1,4 @@
+/*
 package com.ding.provider.user.controller;
 
 import com.ding.provider.user.entity.User;
@@ -9,19 +10,22 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
 
+*/
 /**
  * Created by ding on 2018/4/17.
- */
+ *//*
+
 
 @RestController
 public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping("/{id}")//本注解表示该该方法接爱一get请求
+    @GetMapping("/user/{id}")//本注解表示该该方法接爱一get请求
     public User findById(@PathVariable Long id){
         Optional<User> user = this.userRepository.findById(id);
         return user.get();
     }
 
 }
+*/
