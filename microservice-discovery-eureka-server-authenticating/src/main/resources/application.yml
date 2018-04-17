@@ -26,3 +26,5 @@ security:
   user:
     name: user
     password: 123
+    
+# 客户端的注册是只需要将eureka.client.serviceUrl.defaultZone的值改为http://用户名:密码@主机名:端口/eureka即可

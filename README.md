@@ -3,3 +3,7 @@
 1、eureka目录为单机版的eureka demo
 
 2、eureka-ha为三台机器组成的高可用集群
+
+3、microservice-discovery-eureka-server-authenticating为基于HTTP basic证的Eureka Server
+
+4、
