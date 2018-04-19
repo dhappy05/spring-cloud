@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ding</groupId>
-	<artifactId>microservice-simple-consumer-movie</artifactId>
+	<artifactId>microservice-consumer-movie</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>ConsumerMovie</name>
+	<name>microservice-consumer-movie</name>
 	<description></description>
 
 	<parent>
