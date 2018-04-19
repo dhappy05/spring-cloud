@@ -18,6 +18,6 @@
 
 9、microservice-consumer-movie-ribboncustomizing-properties为使用属性自定义配置的ribbon示例
 
-10、
+10、microservice-consumer-movie-ribbon-without-eureka为脱离Eureka使用ribbon
 
 11、
