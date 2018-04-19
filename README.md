@@ -12,11 +12,11 @@
 
 6、microservice-provider-user-my-metadata为Eureka元数据
 
-7、microservice-consumer-movie-ribbon为带客户端负载均衡的微服务消费者
+7、microservice-consumer-movie-ribbon为带客户端负载均衡的ribbon示例
 
-8、microservice-consumer-movie-ribbon-customizing为使用java代码自定义配置的带客户端负载均衡的微服务消费者
+8、microservice-consumer-movie-ribbon-customizing为使用java代码自定义配置的ribbon示例
 
-9、
+9、microservice-consumer-movie-ribboncustomizing-properties为使用属性自定义配置的ribbon示例
 
 10、
 
