@@ -8,7 +8,7 @@
 
 4、microservice-provider-user为微服务提供者
 
-5、microservice-simple-consumer-movie为微服务消费者
+5、microservice-consumer-movie为微服务消费者
 
 6、microservice-provider-user-my-metadata为Eureka元数据
 
