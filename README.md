@@ -14,7 +14,7 @@
 
 7、microservice-consumer-movie-ribbon为带客户端负载均衡的微服务消费者
 
-8、
+8、microservice-consumer-movie-ribbon-customizing为使用java代码自定义配置的带客户端负载均衡的微服务消费者
 
 9、
 
