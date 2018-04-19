@@ -10,9 +10,9 @@
 
 5、microservice-simple-consumer-movie为微服务消费者
 
-6、
+6、microservice-provider-user-my-metadata为Eureka元数据
 
-7、
+7、microservice-consumer-movie-ribbon为带客户端负载均衡的微服务消费者
 
 8、
 
