@@ -34,7 +34,7 @@
 
 17、microservice-consumer-movie-feign-hystrix-fallback		Feign使用Hystrix
 
-18、
+18、microservice-consumer-movie-feign-hystrix-fallback-factory		通过Fallback Factory检查回退原因
 
 19、
 

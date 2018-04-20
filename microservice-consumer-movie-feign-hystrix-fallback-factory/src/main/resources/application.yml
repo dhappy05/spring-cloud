@@ -1,0 +1,20 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: microservice-consumer-movie
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    # eureka client向eureka server发送心跳的时间间隔，默认30秒，将此值改小可解决eureka注册慢的问题
+    lease-renewal-interval-in-seconds: 3
+    # 续约到期时间（默认90秒）
+    lease-expiration-duration-in-seconds: 3
+
+#注意：在Finchley.M9版本（写这段代码是为最新版本）里，Feign默认是不开启hystrix的，需要手动开启，否则容断器不生效
+feign:
+  hystrix:
+    enabled: true
