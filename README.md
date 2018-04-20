@@ -30,7 +30,7 @@
 
 15、microservice-consumer-movie-feign-logging		Feign的日志
 
-16、
+16、microservice-consumer-movie-ribbon-hystrix		通用方式整合Hystrix（带监控功能）
 
 17、
 
