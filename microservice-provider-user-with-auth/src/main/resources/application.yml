@@ -1,0 +1,43 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: microservice-provider-user
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create                  #此处有四种取值，create表示每次都创建
+  datasource:                           # 指定数据源
+    platform: h2                        # 指定数据源类型
+    schema: classpath:schema.sql        # 指定h2数据库的建表脚本
+    data: classpath:data.sql            # 指定h2数据库的数据脚本
+
+logging:                                # 配置日志级别，让hibernate打印出执行的SQL
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+
+management:
+  server:
+    port: 8002
+
+  endpoints:
+    web:
+      exposure:
+        include: '*'    #springboot2.0中，默认只开放health和当info,详情请参见：https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#production-ready-endpoints
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    virtual-host-name: microservice-provider-user
+    # eureka client向eureka server发送心跳的时间间隔，默认30秒，将此值改小可解决eureka注册慢的问题
+    lease-renewal-interval-in-seconds: 5
+    # 续约到期时间（默认90秒）
+    lease-expiration-duration-in-seconds: 5

@@ -22,6 +22,20 @@
 
 11、microservice-consumer-movie-feign	服务消费者整合Feign
 
-12、
+12、microservice-consumer-movie-feign-customizing	自定义Feign配置
 
-13、
+13、microservice-provider-user-with-auth	手动创建Feign
+
+14、
+
+15、
+
+16、
+
+17、
+
+18、
+
+19、
+
+20、
