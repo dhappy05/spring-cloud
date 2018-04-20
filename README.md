@@ -32,7 +32,7 @@
 
 16、microservice-consumer-movie-ribbon-hystrix		通用方式整合Hystrix（带监控功能）
 
-17、
+17、microservice-consumer-movie-feign-hystrix-fallback		Feign使用Hystrix
 
 18、
 
