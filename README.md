@@ -26,7 +26,7 @@
 
 13、microservice-provider-user-with-auth	手动创建Feign
 
-14、
+14、microservice-consumer-movie-feign-manual	手动创建Feign
 
 15、
 
