@@ -1,0 +1,9 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: microservice-consumer-movie
+logging:
+  level:
+    # Feign接口的日志级别为debug，因为Feign的Logger.Level只对debug作出响应
+    com.ding.consumer.feign.UserFeignClient: debug

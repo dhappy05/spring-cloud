@@ -28,7 +28,7 @@
 
 14、microservice-consumer-movie-feign-manual	手动创建Feign
 
-15、
+15、microservice-consumer-movie-feign-logging		Feign的日志
 
 16、
 
