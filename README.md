@@ -38,4 +38,14 @@
 
 19、microservice-consumer-movie-feign-hystrix-fallback-stream		Feign项目的Hystrix监控
 
-20、
+20、microservice-hystrix-dashboard		使用Hysttrix Dashboard可视化监控数据
+
+21、microservice-hystrix-turbine		使用Turbine聚合监控数据
+
+22、
+
+23、
+
+24、
+
+25、
