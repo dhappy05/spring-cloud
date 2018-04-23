@@ -2,7 +2,7 @@ server:
   port: 8010
 spring:
   application:
-    name: microservice-consumer-movie
+    name: microservice-consumer-movie-ribbon-hystrix
 eureka:
   client:
     serviceUrl:
@@ -10,9 +10,9 @@ eureka:
   instance:
     prefer-ip-address: true
     # eureka client向eureka server发送心跳的时间间隔，默认30秒，将此值改小可解决eureka注册慢的问题
-    lease-renewal-interval-in-seconds: 5
+    lease-renewal-interval-in-seconds: 3
     # 续约到期时间（默认90秒）
-    lease-expiration-duration-in-seconds: 5
+    lease-expiration-duration-in-seconds: 3
 
 management:
   endpoints:
