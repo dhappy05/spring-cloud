@@ -1,0 +1,18 @@
+server:
+  port: 8031
+spring:
+  application:
+    name: microservice-hystrix-turbine-mq
+  rabbitmq:
+    # 此处要与安装rabbit的机器一致
+    host: localhost
+    port: 5672
+    username: superrd
+    password: superrd
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true

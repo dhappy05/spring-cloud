@@ -1,0 +1,3 @@
+本项目使用的时最新版的springboot 与spring cloud，在启动时会报错，暂时未找到原因。
+
+但按照书中的springboot及spring cloud版本来运行时一切正常，能配拿其它模块及rabbitmq工作。
