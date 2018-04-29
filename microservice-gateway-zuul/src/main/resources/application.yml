@@ -1,0 +1,23 @@
+server:
+  port: 8040
+
+spring:
+  application:
+    name: microservice-gateway-zuul
+
+eureka:
+  client:
+    service-url:
+      defalutZone: http://localhost:localhost:8761/eureka/
+    instance:
+        prefer-ip-address: true
+
+#新版本的spring cloud需要打开监控端点，并且通过http://localhost:8040/actuator看到被暴露的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        #springboot2.0中，默认只开放health和当info,
+        #详情请参见：https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#production-ready-endpoints
+        #访问路径为：http://localhost:8010/actuator
+        include: '*'

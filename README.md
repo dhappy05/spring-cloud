@@ -46,9 +46,9 @@
 
 23、microservice-hystrix-turbine-mq		使用消息中间件接收数据（此项目用最springboot 2.0.1.RELEASE及Finchley.M9版的spring cloud启动会报错，用书中的版本运行是ok的）
 
-24、
+24、microservice-gateway-zuul		微服务网关
 
-25、
+
 
 有问题的模块：
 1、microservice-hystrix-turbine-mq
