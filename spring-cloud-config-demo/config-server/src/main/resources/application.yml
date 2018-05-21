@@ -14,3 +14,7 @@ spring:
 
 server:
   port: 7001
+
+#配置文件的命名格式为：{application}-{profile}.properties
+#启动服务端后可通过http://localhost:7001/configcenter/prod/master来测试
+#其中configcenter对应到配置文件名中的application,prod对应到配置文件的profile，master对应到git的分支
