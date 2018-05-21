@@ -1,0 +1,7 @@
+/**/*.iml
+/*/.idea
+/*/.mvn
+/*/target
+/*/*.gitignore
+/*/*.cmd
+/*/mvnw

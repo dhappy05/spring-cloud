@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-center
+
+  # git管理配置
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dhappy05/spring-cloud/    #配置git仓库位置
+          search-paths: spring-cloud-config-demo/config-repo       #配置仓库路径下的相对搜索位置，可以配置多个
+          username: username       #访问git仓库的用户名
+          password: password       #访问git仓库的用户密码
+
+server:
+  port: 7001

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: configcenter   #对应配置文件中的{application}部分
+
+  cloud:
+    config:
+      label: master   #对应前配置文件的git分支
+      profile: prod   #对应前配置文件中的{profile}部分
+      uri: http://localhost:7001/   #配置中心的地址
+
+server:
+  port: 7002
+
+# 若不添加以下配置，则用post方式访问http://localhost:7002/refresh时会出现报错：Full authentication is required to access this resource
+#另一种方式是在maven中添加spring-boot-starter-security依赖，并开启HTTP basic认证认证
+management:
+  security:
+    enabled: false
+
+
+#这里需要格外注意：上面这些属性必须配置在bootstrap.properties中，config部分内容才能被正确加载。
+#因为config的相关配置会先于application.properties，而bootstrap.properties的加载也是先于application.properties。

@@ -48,6 +48,9 @@
 
 24、microservice-gateway-zuul		微服务网关
 
+25、spring-cloud-config-demo		为spring cloud config的demo，参考翟永超http://blog.didispace.com/springcloud4/
+
+26、
 
 
 有问题的模块：
